@@ -11,5 +11,5 @@ function namify(users) {
   // }
   // return names;
 
-  return users.map(user => user.name)
+  return users.map(user => user.name);
 }
