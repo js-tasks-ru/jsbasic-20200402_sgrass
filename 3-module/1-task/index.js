@@ -3,11 +3,13 @@
  * @returns {string[]}  объект
  */
 function namify(users) {
-  let names = [];
-  for (let user of users) {
-    if (user.name !== undefined) {
-      names.push(user.name);
-    }
-  }
-  return names;
+  // let names = [];
+  // for (let user of users) {
+  //   if (user.name !== undefined) {
+  //     names.push(user.name);
+  //   }
+  // }
+  // return names;
+
+  return users.map(user => user.name);
 }

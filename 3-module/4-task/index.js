@@ -5,5 +5,7 @@
  * @returns {string}
  */
 function showSalary(data, age) {
-  // ваш код...
+  let filteredData = data.filter(item => (+item['age'] <= age));
+  filteredData = filteredData.map(item => `${item.name}, ${item.balance}`);
+  return filteredData.join('\n');
 }
